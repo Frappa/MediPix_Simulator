@@ -1,0 +1,38 @@
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+/process/verbose 0
+
+/medipix/gun/verbose 0
+
+/medipix/analysis/stepsDebug 0
+/medipix/analysis/verbose 1
+/medipix/analysis/PrintModulo 10000
+
+### Set the sensitive volume
+/medipix/analysis/DefSD medipix_PhysVol
+
+
+###Particle sorce setup
+
+#/medipix/gun/particle geantino
+/medipix/gun/particle alpha
+/medipix/gun/energy 5.489 MeV
+
+/medipix/gun/primaryNb 1
+/medipix/gun/sourceType Volume
+/medipix/gun/shape Box
+/medipix/gun/center 0 0 -25 mm
+#/medipix/gun/radius 25 mm
+/medipix/gun/halfx 25 mm
+/medipix/gun/halfy 25 mm
+/medipix/gun/halfz 25 mm
+/medipix/gun/angtype iso
+/medipix/gun/confine world_PhysVol
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 2
+
+/medipix/gun/verbose 0
+
+/medipix/analysis/stepsDebug 0
+/medipix/analysis/verbose 1
+
+
+### Set the sensitive volume
+#/medipix/analysis/DefSD medipix_PhysVol
+
+/medipix/gun/particle alpha
+/medipix/gun/energy 3 MeV
+
+/medipix/gun/primaryNb 1
+/medipix/gun/sourceType Point
+/medipix/gun/position 0 0 -48 mm
+/medipix/gun/direction 0 0 -1
+
+#/medipix/gun/sourceType Volume
+#/medipix/gun/shape Box
+#/medipix/gun/center 0 0 -25 mm
+#/medipix/gun/halfx 30 mm
+#/medipix/gun/halfy 30 mm
+#/medipix/gun/halfz 30 mm
+#/medipix/gun/angtype iso
+#/medipix/gun/confine world_PhysVol
+#/medipix/gun/confine medipix_PhysVol
+
+/run/beamOn 1

@@ -1,0 +1,41 @@
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+/process/verbose 0
+
+/medipix/gun/verbose 0
+
+/medipix/analysis/stepsDebug 0
+/medipix/analysis/verbose 1
+/medipix/analysis/PrintModulo 10000
+
+### Set the sensitive volume
+/medipix/analysis/DefSD medipix_PhysVol
+
+
+###Particle sorce setup
+
+#/medipix/gun/particle geantino
+/medipix/gun/particle alpha
+/medipix/gun/energy 7.687 MeV
+
+/medipix/gun/primaryNb 1
+/medipix/gun/sourceType Volume
+/medipix/gun/shape Box
+
+#For the Z coordinate consider the thickness of
+#Si wafer (0.3 mm) + Al layer (500 nm)
+/medipix/gun/center 0 0 -49.6995 mm
+/medipix/gun/halfx 5 mm
+/medipix/gun/halfy 5 mm
+/medipix/gun/halfz 1e-6 mm
+/medipix/gun/angtype iso
+/medipix/gun/confine allumlayer_PhysVol
+
+
+
+
+
+
+

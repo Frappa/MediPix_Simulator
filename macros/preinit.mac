@@ -1,0 +1,18 @@
+/process/verbose 0
+
+
+#/medipix/detector/setMaxTrackStep medipix_LogVol 1e-2 mm
+
+### Set the thickness of the ArCLight TPB layer ###
+/medipix/detector/setAllumThick 5e-4 mm
+
+
+/medipix/physics/setCuts 1 cm
+
+#/medipix/physics/setDetectorCuts 1e-3 mm
+
+
+### Set the level of how many details to save in ROOT tree ###
+/medipix/analysis/SaveData 1
+#/medipix/analysis/SetAutoSave 10000 
+

@@ -1,0 +1,29 @@
+#/control/verbose 2
+#/run/verbose 2
+#/event/verbose 2
+/tracking/verbose 2
+
+
+
+/medipix/analysis/stepsDebug 0
+/medipix/analysis/verbose 0
+/medipix/analysis/PrintModulo 0
+
+/medipix/gun/sourceType Point
+#/medipix/gun/shape Disk
+#/medipix/gun/center 0 0 -47 mm
+#/medipix/gun/radius 50 mm
+#/medipix/gun/halfx 5 mm
+#/medipix/gun/halfy 5 mm
+#/medipix/gun/surfNorm 1 0 0
+#/medipix/gun/angtype iso
+/medipix/gun/position 0 0 0 mm
+/medipix/gun/direction 0 0 -1
+#/medipix/gun/confine world_PhysVol
+
+
+/medipix/gun/particle geantino
+/medipix/gun/energy 1 MeV
+
+/run/beamOn 10
+
